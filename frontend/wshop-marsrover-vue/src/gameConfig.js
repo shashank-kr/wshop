@@ -1,7 +1,7 @@
 const gameConfig = {
   gridWidth: 5,
   gridHeight: 5,
-  numRovers: 4,
+  numRovers: 2,
   activeRoverNum: 0,
   rovers: [],
   craters: [
