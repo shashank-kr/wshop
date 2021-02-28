@@ -1,0 +1,16 @@
+$background: #282828;
+$monochrome: #33ff00;
+$monochrome-dark: #24b300;
+$monochrome-disabled: #0f4d00;
+$monochrome-active: #ffcc00;
+$monochrome-error: #ee2200;
+$monochrome-grey: #999;
+$monofont: "Press Start 2P", cursive;
+
+$obstacle-colour: $monochrome-grey;
+$rover-colour: $monochrome;
+$rover-colour-active: $monochrome-active;
+$rover-colour-disabled: $monochrome-error;
+
+$fade-duration: 2s;
+$menu-animation-duration: 0.4s;

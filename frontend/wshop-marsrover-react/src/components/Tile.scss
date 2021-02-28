@@ -1,0 +1,20 @@
+@import "../styles/_variables.scss";
+.tile {
+  border: 1px solid $monochrome-dark;
+  .inner {
+    position: relative;
+    padding-top: 100%;
+    & > div {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  @media (max-width: 767px) {
+    font-size: 9px;
+  }
+}
+
+.crater {
+  color: $obstacle-colour;
+}

@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.0</TargetFramework>
+		<UserSecretsId>aspnet-WShop.MarsRover.Api-3D8B41B3-48AD-4183-815E-D42EA653CF93</UserSecretsId>
+		<AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+		<DockerfileContext>..\..</DockerfileContext>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<NoWarn>$(NoWarn);1591</NoWarn>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="SwaggerExamples\**" />
+	  <Compile Remove="Validators\**" />
+	  <Content Remove="SwaggerExamples\**" />
+	  <Content Remove="Validators\**" />
+	  <EmbeddedResource Remove="SwaggerExamples\**" />
+	  <EmbeddedResource Remove="Validators\**" />
+	  <None Remove="SwaggerExamples\**" />
+	  <None Remove="Validators\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="IdentityModel" Version="4.5.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.0.0" />		
+		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />		
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="5.0.0" />		
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<Folder Include="obj\" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<ProjectReference Include="..\WShop.MarsRover.Application\WShop.MarsRover.Application.csproj" />
+		<ProjectReference Include="..\WShop.MarsRover.Infrastructure\WShop.MarsRover.Infrastructure.csproj" />
+	</ItemGroup>
+
+
+
+
+</Project>

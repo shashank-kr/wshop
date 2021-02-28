@@ -1,0 +1,36 @@
+@import "../styles/_variables.scss";
+label {
+      display: block;
+}
+input[type="number"] {
+      width: 3em;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+  margin: 0;
+}
+
+select {
+      background: transparent;
+  color: $monochrome;
+  border: 1px solid $monochrome;
+  height: 36px;
+}
+
+.button-land-container {
+      text-align: right;
+}
+
+.coords {
+      display: flex;
+  margin-bottom: 20px;
+  .input-group--column {
+      margin-right: 20px;
+  }
+}
+
+.input-group--row {
+      margin-top: 20px;
+}

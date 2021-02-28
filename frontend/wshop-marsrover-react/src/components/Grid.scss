@@ -1,0 +1,9 @@
+@import "../styles/_variables.scss";
+.grid {
+    border: 1px solid $monochrome-dark;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  .tile {
+      min-width: 10px;
+  }
+}

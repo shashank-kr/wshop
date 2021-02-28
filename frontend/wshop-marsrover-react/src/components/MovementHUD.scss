@@ -1,0 +1,13 @@
+@import "../styles/_variables.scss";
+label {
+  display: block;
+}
+.error {
+  color: $monochrome-error;
+}
+.sequence-input {
+  width: 100%;
+}
+button {
+  margin-right: 20px;
+}
