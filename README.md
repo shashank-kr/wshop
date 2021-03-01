@@ -2,7 +2,7 @@
 
 ## Backend project development and running:
 1) Project architecture using clean architecture
-2) Implementation of task following DDD best practice, event sourcing and pattern in C# .NET Core.
+2) Implementation of task following DDD best practice, event sourcing and CQRS pattern in C# .NET Core.
 3) Rover commands are exposed as APIs which front end application can consume.
 4) To run the backend, download projects from backend folder and run it.
 
@@ -20,3 +20,12 @@ Step 2: To test the below input , do following:
 Step 3: Enter values 1, 2, N in the textboxes labelled as x, y, orientation then click land. It will deploy rover.
 Step 4: After rover is deployed, enter LMLMLMLMM movement command inside movement text box.
 Step 5: After entering movement command, rover can be seen at new location inside grid.
+
+## Further enhancement and optimizations:
+1) Few configuration are hard-coded in front end, which shoud be moved to some configuration file.
+2) Few features tested using some sample data for testing purpose, so cleanup is needed in front end.
+3) To show react skills, same application attempted to do in react but it's complete due to time which can be completed afer putting few more hours.
+4) For backend projects, domain model is exposed to controller which can be abstrcted using some dto. Exposing domain model to outside world is anti-pattern.
+5) Controller code can be further cleanup into smaller tasks/commands with passing less no. of. parameters.
+6) All hardcoded urls/ strings e.g event sourcing url etc. should be put inside configutaion file and
+should be accessed across application using dependency injection.
