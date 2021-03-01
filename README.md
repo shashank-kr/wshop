@@ -14,12 +14,12 @@
 4) Front end will call backend api to find rover position and rover would be didplayed in the grid.
 5) To run the application, download frontend/wshop-marsrover-vue project run `npm install` command and then run `npm run serve`. It will launch the application showing grid with two rovers initially.
 ## Test both frontend and backend application
-Step 1: First make sure both backend api and front end application are running.
-Step 2: To test the below input , do following:
+1) First make sure both backend api and front end application are running.
+2) To test the below input , do following:
         1 2 N|LMLMLMLMM
-Step 3: Enter values 1, 2, N in the textboxes labelled as x, y, orientation then click land. It will deploy rover.
-Step 4: After rover is deployed, enter LMLMLMLMM movement command inside movement text box.
-Step 5: After entering movement command, rover can be seen at new location inside grid.
+3) Enter values 1, 2, N in the textboxes labelled as x, y, orientation then click land. It will deploy rover.
+4) After rover is deployed, enter LMLMLMLMM movement command inside movement text box.
+5) After entering movement command, rover can be seen at new location inside grid.
 
 ## Further enhancement and optimizations:
 1) Few configuration are hard-coded in front end, which shoud be moved to some configuration file.
